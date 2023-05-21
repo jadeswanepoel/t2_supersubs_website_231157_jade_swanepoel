@@ -1,0 +1,85 @@
+.navbar {
+    padding-left: 30px;
+}
+nav{
+    width: 100%;
+    height: 110px;
+    background-color:#7cb45c;
+    color: white;
+}
+.col-box1{
+    width: 100%;
+    height: 20px;
+    background-color: #1c5c34;
+}
+
+.logo{
+    width: 80px;
+    height: 75px;
+    background-color: black;
+    margin-left: -10px;
+    background-image: url(../images/logo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+}
+
+.logo-footer{
+    width: 150px;
+    height: 100px;
+    margin-left: 50px;
+    background-color: black;
+    background-image: url(../images/logo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.copyright{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    margin-left: 650px;
+    border-radius: 50%;
+    background-image: url(../images/copyright.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: -40px;
+}
+.col-boxf{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 1200px;
+    background-image: url(../images/facebook.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: -60px;
+}
+.col-boxi{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 1270px;
+    margin-top: -60px;
+    background-image: url(../images/instagram.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.col-boxp{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 1340px;
+    margin-top: -60px;
+    background-image: url(../images/phone.jpg);
+    background-position: center;
+    background-size: cover;
+}
