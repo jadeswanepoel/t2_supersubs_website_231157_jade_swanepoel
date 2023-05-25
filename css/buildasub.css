@@ -85,20 +85,55 @@ footer{
 }
 
 
-.col-box{
-    width: 500px;
-    height: 500px;
+.col-boxa{
+    width: 600px;
+    height: 750px;
     background-color: #1c5c34;
+    margin-top: 80px;
+    border-radius: 20px;
+    color: white;
+    padding-top: 40px;
 }
 
-.col-box2{
+.col-boxb{
     width: 500px;
     height: 500px;
-    background-color: gray;
+    background-color: orange;
     float: right;
-    margin-top: -500px;
+    margin-top: -690px;
+    border-radius: 20px;
+    margin-left: -100px;
+    
+}
+
+.col-boxc{
+    background-color: white;
+    height: 450px;
+    width: 450px;
+    margin-left: 25px;
+    border-radius: 20px;
+    border: 50px;
+    border-color: #ff4747;
 }
 
 .col-6{
     width: 100%;
 }
+
+
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h3{
+    font-family: 'Concert One', cursive;
+
+}
+
+
+
+
+
+
+

@@ -63,10 +63,156 @@
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <div class="col-box">Form</div>
+        <div class="col-boxa">
+          <form id="pizzaForm">
+            <h3><b>Custom Sub Maker</b></h3>
+            <div class="left">
+              <input type="text" class="form-control" placeholder="Name Your Sub" id="pizzaName">
+              <select class="form-control" id="size">
+                <option>Choose a Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+              </select>
+            </div>
+      
+            <div class="right">
+              <div class="orderCost">R0.00</div>
+            </div>
+      
+              <div class="base-options">
+      
+                <h3><b>Bread Options</b></h3>
+      
+                <div class="base-check">
+                  <input class="form-check-input" type="radio" name="baseRadio" id="standard" data-cost="10" value="Standard" checked>
+                  <label class="form-check-label" for="standard">
+                    White
+                  </label>
+                </div>
+      
+                <div class="base-check">
+                  <input class="form-check-input" type="radio" name="baseRadio" id="deep"  data-cost="15" value="Deep Dish">
+                  <label class="form-check-label" for="deep">
+                    Brown
+                  </label>
+                </div>
+      
+                <div class="base-check">
+                  <input class="form-check-input" type="radio" name="baseRadio" id="thin"  data-cost="20" value="Thin & Crispy">
+                  <label class="form-check-label" for="thin">
+                    Gluten Free
+                  </label>
+                </div>
+      
+              </div>
+      
+              <div class="toppings">
+                <h3><b>Topping Options</b></h3>
+      
+                <div class="top-check">
+                  <input class="form-check-input" name="toppings" type="checkbox" value="salami" id="salami" data-cost="15">
+                  <label class="form-check-label" for="salami">
+                    Lettuce
+                  </label>
+                </div>
+      
+                <div class="top-check">
+                  <input class="form-check-input" name="toppings" type="checkbox" value="olives" id="olives" data-cost="10">
+                  <label class="form-check-label" for="olives">
+                   Cucumber
+                  </label>
+                </div>
+      
+                <div class="top-check">
+                  <input class="form-check-input" name="toppings" type="checkbox" value="feta" id="feta" data-cost="8">
+                  <label class="form-check-label" for="feta">
+                    Red Tomato
+                  </label>
+                </div>
+      
+                <div class="top-check">
+                  <input class="form-check-input" name="toppings" type="checkbox" value="pineapple" id="pineapple" data-cost="12">
+                  <label class="form-check-label" for="pineapple">
+                    Spring Onion
+                  </label>
+                </div>
+      
+                <div class="top-check">
+                  <input class="form-check-input" name="toppings" type="checkbox" value="ham" id="ham" data-cost="17">
+                  <label class="form-check-label" for="ham">
+                    Smoked Ham
+                  </label>
+                </div>
+      
+                <div class="top-check">
+                  <input class="form-check-input" name="toppings" type="checkbox" value="bacon" id="bacon" data-cost="20">
+                  <label class="form-check-label" for="bacon">
+                    Beef Strips
+                  </label>
+                </div>
+      
+                <div class="top-check">
+                  <input class="form-check-input" name="toppings" type="checkbox" value="anchovies" id="anchovies" data-cost="14">
+                  <label class="form-check-label" for="anchovies">
+                   Cheese
+                  </label>
+                </div>
+      
+               
+      
+                <div class="top-check">
+                  <input class="form-check-input" name="toppings" type="checkbox" value="chilles" id="chilles" data-cost="12">
+                  <label class="form-check-label" for="chilles">
+                    Chicken Teriyaki
+                  </label>
+                </div>
+                <div class="top-check">
+                  <input class="form-check-input" name="toppings" type="checkbox" value="chilles" id="chilles" data-cost="12">
+                  <label class="form-check-label" for="chilles">
+                    Green Pepper
+                  </label>
+                </div>
+
+
+                <div class="sauces">
+                  <h3><b>Sauce Options</b></h3>
+
+                  <div class="top-check">
+                    <input class="form-check-input" name="toppings" type="checkbox" value="chilles" id="chilles" data-cost="12">
+                    <label class="form-check-label" for="chilles">
+                      BBQ
+                    </label>
+                  </div>
+                  <div class="top-check">
+                    <input class="form-check-input" name="toppings" type="checkbox" value="chilles" id="chilles" data-cost="12">
+                    <label class="form-check-label" for="chilles">
+                      Chutney
+                    </label>
+                  </div>
+                  <div class="top-check">
+                    <input class="form-check-input" name="toppings" type="checkbox" value="chilles" id="chilles" data-cost="12">
+                    <label class="form-check-label" for="chilles">
+                      Mayo
+                    </label>
+                  </div>
+
+      
+                </div>
+                <button class="btn btn-primary" type="button" onclick="makePizza()" >Make My Pizza</button>    
+      
+              </form>
+      
+          <div class="output">
+            <h3>Your Current Order:</h3>
+            <div class="order-item"></div>
+          </div>
+        </div>
       </div>
       <div class="col-6">
-        <div class="col-box2">Imagery</div>
+        <div class="col-boxb">Imagery
+          <div class="col-boxc"></div>
+        </div>
       </div>
     </div>
   </div>
