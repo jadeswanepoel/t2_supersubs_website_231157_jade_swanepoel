@@ -125,6 +125,7 @@ footer{
     border-radius: 20px;
     border: 50px;
     border-color: #ff4747;
+    margin-top: 20px;
 }
 
 .col-6{
@@ -192,4 +193,10 @@ form{
 
 .output{
     text-align: center;
+}
+
+.button-con{
+    margin-top: 600px;
+    margin-right: 100px;
+    margin-left: -60px;
 }
