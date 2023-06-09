@@ -1,3 +1,13 @@
+.text1{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin-top: -20px;
+}
+
+
+
+
+
 .navbar {
     padding-left: 30px;
 }
@@ -24,16 +34,16 @@ nav{
 }
 
 footer{
-    width: 100%;
+    width: 100px;
     height: 150px;
     margin-top: 50px;
-    border: 2px dashed red;
+    
 }
 
 .logo-footer{
     width: 150px;
     height: 100px;
-    margin-left: 50px;
+    margin-left: -0px;
     background-color: black;
     background-image: url(../images/logo.jpg);
     background-position: center;
@@ -56,7 +66,7 @@ footer{
     height: 60px;
     background-color: black;
     border-radius: 50%;
-    margin-left: 1200px;
+    margin-left: 1310px;
     background-image: url(../images/facebook.jpg);
     background-position: center;
     background-size: cover;
@@ -67,7 +77,7 @@ footer{
     height: 60px;
     background-color: black;
     border-radius: 50%;
-    margin-left: 1270px;
+    margin-left: 1180px;
     margin-top: -60px;
     background-image: url(../images/instagram.jpg);
     background-position: center;
@@ -78,7 +88,7 @@ footer{
     height: 60px;
     background-color: black;
     border-radius: 50%;
-    margin-left: 1340px;
+    margin-left: 1245px;
     margin-top: -60px;
     background-image: url(../images/phone.jpg);
     background-position: center;
@@ -87,10 +97,10 @@ footer{
 
 
 .col-boxa{
-    width: 600px;
-    height: 750px;
+    width: 750px;
+    height: 980px;
     background-color: #1c5c34;
-    margin-top: 80px;
+    margin-top: 20px;
     border-radius: 20px;
     color: white;
     padding-top: 40px;
@@ -98,10 +108,10 @@ footer{
 
 .col-boxb{
     width: 500px;
-    height: 500px;
+    height: 800px;
     background-color: orange;
     float: right;
-    margin-top: -690px;
+    margin-top: -900px;
     border-radius: 20px;
     margin-left: -100px;
     
@@ -109,7 +119,7 @@ footer{
 
 .col-boxc{
     background-color: white;
-    height: 450px;
+    height: 750px;
     width: 450px;
     margin-left: 25px;
     border-radius: 20px;
@@ -127,14 +137,59 @@ form{
     margin: 0 auto;
 }
 
-h3{
-    font-family: 'Concert One', cursive;
 
+.size-options{
+    
+    margin-top: 30px;
+    width: 300px;
+    text-align: left;
+    margin-left: 10px;
+    
 }
 
+.bread-options{
+  
+    width: 300px;
+    margin-left: 370px;
+    margin-top: -150px;
+}
 
+.left{
+    width: 400px;
+    margin-left: 100px;
+}
 
+.form-control{
+    border-radius: 15px;
+}
 
+.toppings2{
+    
+    width: 300px;
+    margin-left: 360px;
+    margin-top: -240px;
+}
 
+.sauce-options{
+   margin-top: 20px;
+}
 
+.toppings{
+    margin-top: 20px;
+    margin-left: 10px;
+}
 
+.meat-options{
+    margin-left: 360px;
+    margin-top: -230px;
+}
+
+.btn{
+    margin-left: 200px;
+    margin-top: 40px;
+    background-color: orange;
+}
+
+.output{
+    text-align: center;
+}
