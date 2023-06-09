@@ -83,16 +83,7 @@ footer{
     background-size: cover;
 }
 
-body{
-  margin: 0;
-  padding: 0;
-}
 
-form{
-  width: 50%;
-  margin:  0 auto;
-  margin-top: 50px;
-}
 
 .topPizzas{
   width: 50%;
@@ -279,6 +270,86 @@ select{
   margin-top: 20px;
 }
 
-.col-boxpay{
-  width: 300px;
+body {
+  font-family: Arial, sans-serif;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+.order-summary {
+  margin-bottom: 20px;
+}
+
+.coupon-section {
+  margin-bottom: 20px;
+}
+
+.coupon-section input {
+  width: 200px;
+  padding: 5px;
+}
+
+.total-section {
+  text-align: center;
+}
+
+.total-section h2 {
+  margin-bottom: 5px;
+}
+
+.total-section p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#pay-total-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#pay-total-btn:hover {
+  background-color: #45a049;
+}
+
+.order-summary{
+  text-align: center;
+  
+}
+
+.coupon-section{
+  text-align: center;
+}
+
+.col-boxform{
+  width: 400px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 50px;
+  border: 10px #1c5c34;
+  border-radius: 10px #1c5c34 ;
+}
+.col-boxorders{
+  width: 700px;
+  height: 400px;
+  background-color: #1c5c34;
+  margin-left: 600px;
+  margin-top: -400px;
+  color: white;
+  border-radius: 20px;
+}
+
+.col-boxorders1{
+  background-color: white;
+  width: 600px;
+  height: 300px;
+  margin-left: 50px;
+  border-radius: 20px;
 }

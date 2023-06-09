@@ -65,34 +65,44 @@
   </nav>
 
 
-  <div class="col-boxpay" onload="diplayCheck()">
-    <div class="checkLeft">
-      <h1>Your Order</h1>
-      <div id="checkoutOrder">
-     
+  <div class="container">
+    <div class="col-boxform">
+      <title>Sandwich Checkout</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+    
+      <h1>Checkout</h1>
+    
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <ul id="order-list"></ul>
+      </div>
+    
+      <div class="coupon-section">
+        <h2>Apply Coupon</h2>
+        <input type="text" id="coupon-input" placeholder="Enter coupon code">
+        <button id="apply-coupon-btn">Apply Coupon</button>
+      </div>
+    
+      <div class="total-section">
+        <h2>Total</h2>
+        <p id="total-amount">$0</p>
+        <button id="pay-total-btn">Pay Total</button>
+      </div>
+    </div>
+  
+    <div class="col-boxorders"><h1>Orders:</h1>
+    <div class="col-boxorders1"></div>
   </div>
-  <div class="checkRight">
-      <h1>Your Total</h1>
-      <h2 id="totalOut" class="total">R0.00</h2>
-
-      <h3>Enter a Promo Code</h3>
-      <input type="text" class="form-control" placeholder="#0000" id="promo">
-      <button class="btn btn-primary" type="button" onclick="">Add Discount</button>  
-
-      <button class="btn btn-primary" type="button" onclick="resetReturn()">Make Payment</button>  
+ 
 
 
-  </div></div> 
-   
-
-
-  <footer>
-    <div class="logo-footer"></div>
-    <div class="copyright"></div>
-    <div class="col-boxf"></div>
-    <div class="col-boxi"></div>
-    <div class="col-boxp"></div>
-</footer>
+     <footer>
+       <div class="logo-footer"></div>
+        <div class="copyright"></div>
+       <div class="col-boxf"></div>
+       <div class="col-boxi"></div>
+      <div class="col-boxp"></div>
+    </footer>
 
     
 </body>
