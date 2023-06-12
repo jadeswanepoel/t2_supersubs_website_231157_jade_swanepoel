@@ -38,7 +38,9 @@ footer{
     height: 150px;
     margin-top: 50px;
     
+    
 }
+
 
 .logo-footer{
     width: 150px;
@@ -97,45 +99,22 @@ footer{
 
 
 .col-boxa{
-    width: 750px;
-    height: 980px;
-    background-color: #1c5c34;
+    width: 1300px;
+    height: 680px;
+    background-image: url(../images/black.jpg);
+    background-position: center;
+    background-size: cover;
     margin-top: 20px;
-    border-radius: 20px;
     color: white;
     padding-top: 40px;
 }
 
-.col-boxb{
-    width: 500px;
-    height: 800px;
-    background-color: orange;
-    float: right;
-    margin-top: -900px;
-    border-radius: 20px;
-    margin-left: -100px;
-    
-}
-
-.col-boxc{
-    background-color: white;
-    height: 750px;
-    width: 450px;
-    margin-left: 25px;
-    border-radius: 20px;
-    border: 50px;
-    border-color: #ff4747;
-    margin-top: 20px;
-}
-
-.col-6{
-    width: 100%;
-}
 
 
 form{
     width: 80%;
     margin: 0 auto;
+    margin-left: 50px;
 }
 
 
@@ -196,7 +175,59 @@ form{
 }
 
 .button-con{
-    margin-top: 600px;
+    margin-top: -100px;
     margin-right: 100px;
     margin-left: -60px;
+}
+
+.bread-options{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+
+.topping-options{
+    margin-left: 650px;
+    margin-top: -200px;
+    width: 200px;
+}
+
+
+.col-box{
+    padding-left: 650px;
+    padding-top: -600px;
+
+    width: 500px;
+    height: 500px;
+
+}
+
+.col-boxa{
+    background-color: antiquewhite;
+}
+.topping-options2{
+    width: 200px;
+    padding-top: -400px;
+}
+
+.sauce-options{
+    margin-top: -550px;
+    margin-left: 90px;
+}
+
+.right{
+    margin-left: 900px;
+    margin-top: -300px;
+}
+
+.right{
+    height: 130px;
+
+    width: 200px;
+    float: left;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #7cb45c;
+   
 }
