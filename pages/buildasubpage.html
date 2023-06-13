@@ -79,7 +79,7 @@
 
               <div class="white-bread"></div>
               <div class="bread-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="White" checked>
+                <input class="form-check-input" type="radio" name="breadRadio" id="white" value="White" checked data-cost="20">
                 <label class="form-check-label" for="white">
                   WHITE
                 </label>
@@ -89,7 +89,7 @@
               <div class="brown-bread">
               </div>
               <div class="bread-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Brown" checked>
+                <input class="form-check-input" type="radio" name="breadRadio" id="brown" value="Brown" checked data-cost="30">
                 <label class="form-check-label" for="brown">
                   BROWN
                 </label>
@@ -97,7 +97,7 @@
 
               <div class="gluten-bread"></div>
               <div class="bread-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Gluten Free" checked>
+                <input class="form-check-input" type="radio" name="breadRadio" id="gluten" value="Gluten Free" checked data-cost="40">
                 <label class="form-check-label" for="gluten">
                   GLUTEN FREE
                 </label>
@@ -110,7 +110,7 @@
 
               <div class="bacon"></div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="bacon" id="bacon" data-cost="10">
+                <input class="form-check-input" type="checkbox" name="toppings" value="bacon" id="bacon" data-cost="10">
                 <label class="form-check-label" for="bacon">
                   Bacon
                 </label>
@@ -118,7 +118,7 @@
 
               <div class="beef"></div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="beef" id="bacon" data-cost="10">
+                <input class="form-check-input" type="checkbox" value="beef" name="toppings" id="bacon" data-cost="10">
                 <label class="form-check-label" for="beef">
                   Beef
                 </label>
@@ -126,7 +126,7 @@
 
               <div class="carrot"></div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="carrot" id="carrot" data-cost="5">
+                <input class="form-check-input" type="checkbox" value="carrot" name="toppings" id="carrot" data-cost="5">
                 <label class="form-check-label" for="carrot">
                   Carrot
                 </label>
@@ -134,7 +134,7 @@
 
               <div class="cheddar"></div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="cheddar" id="cheddar" data-cost="7">
+                <input class="form-check-input" type="checkbox" value="cheddar" name="toppings" id="cheddar" data-cost="7">
                 <label class="form-check-label" for="cheese">
                   Cheddar Cheese
                 </label>
@@ -142,7 +142,7 @@
 
               <div class="gouda"></div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="gouda" id="gouda" data-cost="7">
+                <input class="form-check-input" type="checkbox" value="gouda" name="toppings" id="gouda" data-cost="7">
                 <label class="form-check-label" for="gouda">
                   Gouda Cheese
                 </label>
@@ -150,7 +150,7 @@
 
               <div class="chicken"></div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="chicken" id="chicken" data-cost="10">
+                <input class="form-check-input" type="checkbox" value="chicken" name="toppings" id="chicken" data-cost="10">
                 <label class="form-check-label" for="chicken">
                   Chicken
                 </label>
@@ -158,7 +158,7 @@
 
               <div class="cucumber"></div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="cucumber" id="cucumber" data-cost="5">
+                <input class="form-check-input" type="checkbox" value="cucumber" name="toppings" id="cucumber" data-cost="5">
                 <label class="form-check-label" for="cucumber">
                  Cucumber
                 </label>
@@ -166,7 +166,7 @@
 
               <div class="eggs"></div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="eggs" id="eggs" data-cost="8">
+                <input class="form-check-input" type="checkbox" value="eggs" name="toppings" id="eggs" data-cost="8">
                 <label class="form-check-label" for="eggs">
                   Eggs
                 </label>
@@ -174,7 +174,7 @@
 
               <div class="ham"></div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="ham" id="ham" data-cost="8">
+                <input class="form-check-input" type="checkbox" value="ham"name="toppings"  id="ham" data-cost="8">
                 <label class="form-check-label" for="ham">
                   Ham
                 </label>
@@ -182,7 +182,7 @@
 
               <div class="lettuce"></div>
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="lettuce" id="lettuce" data-cost="5">
+                <input class="form-check-input" type="checkbox" value="lettuce" name="toppings" id="lettuce" data-cost="5">
                 <label class="form-check-label" for="lettuce">
                   Lettuce
                 </label>
@@ -197,7 +197,7 @@
               
                 <div class="mushrooms"></div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="mushrooms" id="mushrooms" data-cost="7">
+                  <input class="form-check-input" type="checkbox" name="toppings" value="mushrooms" id="mushrooms" data-cost="7">
                   <label class="form-check-label" for="mushrooms">
                     Mushrooms
                   </label>
@@ -205,7 +205,7 @@
     
                 <div class="olive"></div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="olive" id="olive" data-cost="5">
+                  <input class="form-check-input" type="checkbox" value="olive" name="toppings" id="olive" data-cost="5">
                   <label class="form-check-label" for="olive">
                     Olive
                   </label>
@@ -213,7 +213,7 @@
     
                 <div class="onion"></div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="onion" id="onion" data-cost="5">
+                  <input class="form-check-input" type="checkbox" value="onion" name="toppings" id="onion" data-cost="5">
                   <label class="form-check-label" for="inion">
                    Onion
                   </label>
@@ -221,7 +221,7 @@
     
                 <div class="parsley"></div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="parsley" id="parsley" data-cost="5">
+                  <input class="form-check-input" type="checkbox" value="parsley" name="toppings" id="parsley" data-cost="5">
                   <label class="form-check-label" for="parsley">
                     Parsley
                   </label>
@@ -229,7 +229,7 @@
     
                 <div class="pepper"></div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="pepper" id="pepper" data-cost="5">
+                  <input class="form-check-input" type="checkbox" value="pepper" name="toppings" id="pepper" data-cost="5">
                   <label class="form-check-label" for="pepper">
                     Pepper
                   </label>
@@ -237,7 +237,7 @@
     
                 <div class="purple-lettuce"></div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="purple-lettuce" id="purple-lettuce" data-cost="5">
+                  <input class="form-check-input" type="checkbox" name="toppings" value="purple-lettuce" id="purple-lettuce" data-cost="5">
                   <label class="form-check-label" for="purple-lettuce">
                     Purple Lettuce
                   </label>
@@ -245,7 +245,7 @@
     
                 <div class="salami"></div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="lettuce" id="salami" data-cost="10">
+                  <input class="form-check-input" type="checkbox"  name="toppings"value="lettuce" id="salami" data-cost="10">
                   <label class="form-check-label" for="salami">
                     Salami
                   </label>
@@ -253,7 +253,7 @@
     
                 <div class="shrimp"></div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="shrimp" id="shrimp" data-cost="10">
+                  <input class="form-check-input" type="checkbox" name="toppings" value="shrimp" id="shrimp" data-cost="10">
                   <label class="form-check-label" for="shrimp">
                     Shrimp
                   </label>
@@ -261,7 +261,7 @@
     
                 <div class="strikey-ham"></div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="strikey-ham" id="strikey-ham" data-cost="10">
+                  <input class="form-check-input" type="checkbox" name="toppings" value="strikey-ham" id="strikey-ham" data-cost="10">
                   <label class="form-check-label" for="strikey-ham">
                     Strekey Ham
                   </label>
@@ -269,7 +269,7 @@
     
                 <div class="tomato"></div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="tomato" id="tomato" data-cost="5">
+                  <input class="form-check-input" type="checkbox" name="toppings" value="tomato" id="tomato" data-cost="5">
                   <label class="form-check-label" for="tomato">
                     Tomato
                   </label>
@@ -282,7 +282,7 @@
 
               <div class="mustard"></div>
               <div class="sauce-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Mustard" checked>
+                <input class="form-check-input" type="radio" name="sauceRadio" id="mustard" value="Mustard" checked>
                 <label class="form-check-label" for="mustard">
                  MUSTARD
                 </label>
@@ -292,7 +292,7 @@
               <div class="mayonaise">
               </div>
               <div class="sauce-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Mayonaise" checked>
+                <input class="form-check-input" type="radio" name="sauceRadio" id="mayonaise" value="Mayonaise" checked>
                 <label class="form-check-label" for="mayonaise">
                   MAYONAISE
                 </label>
@@ -300,15 +300,15 @@
 
               <div class="ketchup"></div>
               <div class="sauce-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Ketchup" checked>
+                <input class="form-check-input" type="radio" name="sauceRadio" id="ketchup" value="Ketchup" checked>
                 <label class="form-check-label" for="gluten">
-                  TOMATO
+                  KETCHUP
                 </label>
               </div>
 
               <div class="herbs"></div>
               <div class="sauce-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Herb" checked>
+                <input class="form-check-input" type="radio" name="sauceRadio" id="herbs" value="Herb" checked>
                 <label class="form-check-label" for="herb">
                   HERBS
                 </label>
@@ -316,7 +316,7 @@
 
               <div class="garlic"></div>
               <div class="sauce-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Garlic" checked>
+                <input class="form-check-input" type="radio" name="sauceRadio" id="garlic" value="Garlic" checked>
                 <label class="form-check-label" for="garlic">
                   GARLIC
                 </label>
@@ -326,6 +326,9 @@
              <div class="right">
               <div class="orderCost" id="realTimeCost">R0.00</div>
             </div>
+
+            <button type="button" class="btn btn-success" onclick="generateSub();displayOrder()">Generate</button>
+            
 
              
       
@@ -337,6 +340,10 @@
 
 
     </div>
+  </div>
+
+  <div class="conatiner2">
+    <div class="col-boxcards"></div>
   </div>
 <footer>
     <div class="logo-footer"></div>
