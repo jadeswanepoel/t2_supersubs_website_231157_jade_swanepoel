@@ -65,7 +65,7 @@ realTimeCost = ( )  => {
         }
     }
 
-    let toppingOptions = document.getElementsByName("toppings");
+    let toppingOptions = document.getElementsByName("sauceRadio");
     for(let i = 0; i < toppingOptions.length; i++){
         if(toppingOptions[i].checked){
             
