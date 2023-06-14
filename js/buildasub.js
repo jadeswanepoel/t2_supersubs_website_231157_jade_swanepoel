@@ -51,7 +51,7 @@ generateSub = () =>{
 
 }
 
-realTimeCost = ( )  => {
+realTimeCost = ()  => {
 
     realTimePrice = 0;
 
