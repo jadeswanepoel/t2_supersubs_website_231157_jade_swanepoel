@@ -1,47 +1,47 @@
-// Sample sandwich prices
-const sandwichPrices = {
-  turkey: 5.99,
-  ham: 4.99,
-  veggie: 3.99
-};
+let checkTotal = 0;
 
-// Sample coupon codes and discounts
-const coupons = {
-  10OFF: 0.1,
-  20OFF: 0.2,
-  30OFF: 0.3
-};
 
-// Get the order list element
-const orderList = document.getElementById('order-list');
 
-// Add items to the order list
-function addItemToOrder(item) {
-  const li = document.createElement('li');
-  li.textContent = item;
-  orderList.appendChild(li);
+displayCheck = () => {
+    
+
+    let data = JSON.parse(localStorage.getItem('order'))
+
+    let items = document.getElementById('checkoutOrder');
+    let totalArea = document.getElementById('totalOut');
+
+    let checkTotal = 0;
+
+    for(let i =0; i < data.length; i++){
+
+        let name = data[i].subName;
+        let bread = data[i].subBread;
+        let toppings = data[i].subToppings;
+        let sauce = data[i].subSauce;
+        let price = data[i].subPrice;
+
+
+        checkTotal += price;
+
+        items.innerHTML += `
+        <div class="orderLine">
+                    <p><strong>Name</strong>${name}</p>
+                    <p><strong>sauce</strong>${sauce}</p>
+                 <p><strong>Base</strong>${bread}</p>
+                   <p><strong>Toppings</strong>${toppings.join(',  ')}</p>
+                     <p><strong>Price</strong>${price}.00</p>
+        </div>
+        
+        `
+        totalArea.innerHTML = "R" + checkTotal + ".00";
+    }
 }
 
-// Calculate and display the total amount
-function calculateTotal() {
-  let total = 0;
-  const orderItems = orderList.children;
-  for (let i = 0; i < orderItems.length; i++) {
-    const itemName = orderItems[i].textContent;
-    total += sandwichPrices[itemName];
-  }
-
-  // Update the total amount
-  const totalAmount = document.getElementById('total-amount');
-  totalAmount.textContent = `$${total.toFixed(2)}`;
+addDiscount = ( ) => {
+    //discount
 }
 
-// Apply the coupon code and update the total amount
-function applyCoupon() {
-  const couponInput = document.getElementById('coupon-input');
-  const couponCode = couponInput.value;
-  const discount = coupons[couponCode];
-
-  if (discount) {
-    const totalAmount = document.getElementById('total-amount');
-    const currentTotal = parseFloat(totalAmount.textContent.slice(1));
+resetReturn = () => {
+    localStorage.removeItem('order');
+    window.location.href = "pages/checkout.html"
+}

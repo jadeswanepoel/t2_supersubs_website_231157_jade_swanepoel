@@ -67,28 +67,30 @@
 
   <div class="container">
     <div class="col-boxform">
-      <title>Sandwich Checkout</title>
-      <link rel="stylesheet" type="text/css" href="styles.css">
+      <title>Sub Checkout</title>
     
       <h1>Checkout</h1>
     
-      <div class="order-summary">
-        <h2>Order Summary</h2>
-        <ul id="order-list"></ul>
+      <body onload="displayCheck()">
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <ul id="checkoutOrder"></ul>
+        </div>
+      
+        <div class="coupon-section">
+          <h2>Apply Coupon</h2>
+          <input type="text" class="form-control" id="promo" placeholder="#0000">
+          <button id="apply-coupon-btn" type="button" onclick="">Apply Coupon</button>
+        </div>
+      
+        <div class="total-section">
+          <h2>Total</h2>
+          <p id="totalOut" class="total">R0</p>
+          <button id="pay-total-btn" type="button" onclick="resetReturn()">Pay</button>
+        </div>
       </div>
-    
-      <div class="coupon-section">
-        <h2>Apply Coupon</h2>
-        <input type="text" id="coupon-input" placeholder="Enter coupon code">
-        <button id="apply-coupon-btn">Apply Coupon</button>
-      </div>
-    
-      <div class="total-section">
-        <h2>Total</h2>
-        <p id="total-amount">$0</p>
-        <button id="pay-total-btn">Pay Total</button>
-      </div>
-    </div>
+    </body>
+ 
   
     <div class="col-boxorders"><h1>Orders:</h1>
     <div class="col-boxorders1"></div>

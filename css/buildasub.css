@@ -249,3 +249,26 @@ form{
     border-radius: 20px;
     margin-top: 10px;
 }
+
+.outHeader h3{
+    float: left;
+}
+
+.totalOrder{
+    float: left;
+    margin-left: 48%;
+}
+
+.totalOrder h3{
+    font-size: 40px;
+    margin-top: -10px;
+}
+
+.card{
+    width: 29%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+    float: left;
+    margin: 2%;
+}
