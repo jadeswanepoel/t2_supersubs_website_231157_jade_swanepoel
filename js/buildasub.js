@@ -9,7 +9,7 @@ generateSub = () =>{
     let breadValue;
     for(let i = 0; i < breadOption.length; i++ ){
         if(breadOption[i].checked){
-            breadValue = baseOption[i].value
+            breadValue = breadOption[i].value
             subTotal = subTotal + +breadOption[i].dataset.cost
         }
     }
@@ -27,7 +27,7 @@ generateSub = () =>{
     let sauceValue;
     for(let i = 0; i < sauceOption.length; i++ ){
         if(sauceOption[i].checked){
-            sauceValue = baseOption[i].value
+            sauceValue = sauceOption[i].value
             subTotal = subTotal + +sauceOption[i].dataset.cost
         }
     }
@@ -40,7 +40,7 @@ generateSub = () =>{
         subBread: breadValue,
         subToppings: topArray,
         subSauce:sauceValue,
-        subPrice: subTotal
+        subPrice: subTotal + 20
     });
 
     console.log(subOrder)
@@ -49,11 +49,13 @@ generateSub = () =>{
 
     document.getElementById("subForm").reset();
 
+
+
 }
 
 realTimeCost = ()  => {
 
-    realTimePrice = 0;
+    realTimePrice = 10;
 
 
 
@@ -65,11 +67,12 @@ realTimeCost = ()  => {
         }
     }
 
-    let toppingOption = document.getElementsByName("sauceRadio");
-    for(let i = 0; i < toppingOption.length; i++){
-        if(toppingOption[i].checked){
+    let toppingOptions = document.getElementsByName("sauceRadio");
+   
+    for(let i = 0; i < toppingOptions.length; i++){
+        if(toppingOptions[i].checked){
             
-            realTimePrice = realTimePrice + +toppingOption[i].dataset.cost
+            realTimePrice = realTimePrice + +toppingOptions[i].dataset.cost
         }
     }
 
