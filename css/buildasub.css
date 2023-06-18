@@ -286,3 +286,21 @@ form{
     border-radius: 5px;
     margin-top: -20px;
 }
+
+.totalOrder{
+    
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.outHeader{
+    
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+#checkout-btn{
+    background-color: black;
+    margin-top: 350px;
+}
