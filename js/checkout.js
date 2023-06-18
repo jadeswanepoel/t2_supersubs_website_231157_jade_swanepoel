@@ -1,16 +1,16 @@
-let checkTotal = 0;
+let subTotal = 0;
 
 
 
-displayCheck = () => {
+subCheck = () => {
     
 
     let data = JSON.parse(localStorage.getItem('order'))
 
     let items = document.getElementById('checkoutOrder');
-    let totalArea = document.getElementById('totalOut');
+    let totalSub = document.getElementById('totalOut');
 
-    let checkTotal = 0;
+    let subTotal = 0;
 
     for(let i =0; i < data.length; i++){
 
@@ -21,19 +21,19 @@ displayCheck = () => {
         let price = data[i].subPrice;
 
 
-        checkTotal += price;
+        subTotal += price;
 
         items.innerHTML += `
         <div class="orderLine">
-                    <p><strong>Name</strong>${name}</p>
-                    <p><strong>sauce</strong>${sauce}</p>
-                 <p><strong>Base</strong>${bread}</p>
-                   <p><strong>Toppings</strong>${toppings.join(',  ')}</p>
-                     <p><strong>Price</strong>${price}.00</p>
+                    <p><strong>Name</strong>:${name}</p>
+                    <p><strong>Sauce</strong>:${sauce}</p>
+                 <p><strong>Base</strong>:${bread}</p>
+                   <p><strong>Toppings</strong>:${toppings.join(',  ')}</p>
+                     <p><strong>Price</strong>:${price}.00</p>
         </div>
         
         `
-        totalArea.innerHTML = "R" + checkTotal + ".00";
+        totalSub.innerHTML = "R" + subTotal + ".00";
     }
 }
 
@@ -43,5 +43,5 @@ addDiscount = ( ) => {
 
 resetReturn = () => {
     localStorage.removeItem('order');
-    window.location.href = "pages/checkout.html"
+    window.location.href = '../checkout.html'
 }

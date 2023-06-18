@@ -59,30 +59,28 @@ subCost = ()  => {
 
 
 
-    let breadOption = document.getElementsByName("breadRadio")
-    for(let i = 0; i < breadOption.length; i++){
+    let breadOption = document.getElementsByName("breadRadio");
+    for(let i = 0; i < breadOption.length; i++ ){
         if(breadOption[i].checked){
-           
             subPrice = subPrice + +breadOption[i].dataset.cost
         }
     }
 
     let toppingOptions = document.getElementsByName("toppings");
-   
     for(let i = 0; i < toppingOptions.length; i++){
         if(toppingOptions[i].checked){
-            
-            subPrice = subPrice + +toppingOptions[i].dataset.cost
+            subPrice = subPrice + +toppingOptions[i].dataset.cost;
         }
     }
 
+
     let sauceOption = document.getElementsByName("sauceRadio");
-    for(let i = 0; i < sauceOption.length; i++){
+    for(let i = 0; i < sauceOption.length; i++ ){
         if(sauceOption[i].checked){
-            
             subPrice = subPrice + +sauceOption[i].dataset.cost
         }
     }
+
 
     document.getElementById("subCost").innerHTML = "R" + subPrice + ".00"
 }
