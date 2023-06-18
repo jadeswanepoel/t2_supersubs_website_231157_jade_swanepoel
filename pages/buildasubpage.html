@@ -73,7 +73,7 @@
     <div class="row">
       <div class="col-6">
         <div class="col-boxa">
-          <form id="subForm" onchange="realTimeCost()">
+          <form id="subForm" onchange="subCost()">
      
             <div class="heading"><h1>SUPERSUB GENERATOR</h1></div>
             <div class="left">
@@ -320,10 +320,14 @@
              </div>
 
              <div class="right">
-              <div class="orderCost" id="realTimeCost">R0.00</div>
+              <div class="orderCost" id="subCost">R0.00</div>
             </div>
 
             <button type="button" id="btn-generate" onclick="generateSub();displayOrder()">Generate</button>
+
+            <div class="button-con">
+              <button class="btn btn-primary" type="button" id="checkout-btn" onclick="checkOut()">Checkout!</button>    
+            </div>
             
 
              
@@ -348,9 +352,7 @@
 
         </div>
         <div class="totalOrder"><h3 id="orderTotal">R0.00</h3></div>
-        <div class="button-con">
-          <button class="btn btn-primary" type="button" id="checkout-btn" onclick="checkOut()">Checkout!</button>    
-        </div>
+        
       </div>
 
      

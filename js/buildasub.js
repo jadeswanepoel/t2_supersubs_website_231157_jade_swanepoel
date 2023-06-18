@@ -45,7 +45,7 @@ generateSub = () =>{
 
     console.log(subOrder)
 
-    document.getElementById("realTimeCost").innerHTML = "R0.00"
+    document.getElementById("subCost").innerHTML = "R0.00"
 
     document.getElementById("subForm").reset();
 
@@ -53,9 +53,9 @@ generateSub = () =>{
 
 }
 
-realTimeCost = ()  => {
+subCost = ()  => {
 
-    realTimePrice = 10;
+    subPrice = 0;
 
 
 
@@ -63,28 +63,28 @@ realTimeCost = ()  => {
     for(let i = 0; i < breadOption.length; i++){
         if(breadOption[i].checked){
            
-           realTimePrice = realTimePrice + +breadOption[i].dataset.cost
+            subPrice = subPrice + +breadOption[i].dataset.cost
         }
     }
 
-    let toppingOptions = document.getElementsByName("sauceRadio");
+    let toppingOptions = document.getElementsByName("toppings");
    
     for(let i = 0; i < toppingOptions.length; i++){
         if(toppingOptions[i].checked){
             
-            realTimePrice = realTimePrice + +toppingOptions[i].dataset.cost
+            subPrice = subPrice + +toppingOptions[i].dataset.cost
         }
     }
 
-    let sauceOption = document.getElementsByName("toppings");
+    let sauceOption = document.getElementsByName("sauceRadio");
     for(let i = 0; i < sauceOption.length; i++){
         if(sauceOption[i].checked){
             
-            realTimePrice = realTimePrice + +sauceOption[i].dataset.cost
+            subPrice = subPrice + +sauceOption[i].dataset.cost
         }
     }
 
-    document.getElementById("realTimeCost").innerHTML = "R" + realTimePrice + ".00"
+    document.getElementById("subCost").innerHTML = "R" + subPrice + ".00"
 }
 
 displayOrder = () => {

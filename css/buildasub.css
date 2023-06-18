@@ -284,7 +284,7 @@ form{
     height: 50px;
     width: 100px;
     border-radius: 5px;
-    margin-top: -20px;
+    margin-top: -1000px;
 }
 
 .totalOrder{
@@ -301,6 +301,8 @@ form{
 }
 
 #checkout-btn{
-    background-color: black;
-    margin-top: 350px;
+    background-color: white;
+    color: black;
+    margin-left: 1015px;
+    margin-top: -450px;
 }
